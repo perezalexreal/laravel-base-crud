@@ -14,12 +14,12 @@
 
   <div class="mb-3">
     <label class="form-label">Prezzo</label>
-    <input type="number" class="form-control" name="price">
+    <input type="number" class="form-control" name="price" min="1" max="99999">
   </div>
 
   <div class="mb-3">
     <label class="form-label">Descrizione fumetto</label>
-    <input type="text" class="form-control" name="description">
+    <textarea type="text" class="form-control" name="description"></textarea>
   </div>
 
   <div class="mb-3">

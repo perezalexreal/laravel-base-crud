@@ -15,7 +15,7 @@
 
   <div class="mb-3">
     <label class="form-label">Prezzo</label>
-    <input type="number" class="form-control" name="price" value="{{ $comic->price}}">
+    <input type="number" class="form-control" name="price" value="{{ $comic->price}}" min="1" max="99999" >
   </div>
 
   <div class="mb-3">
