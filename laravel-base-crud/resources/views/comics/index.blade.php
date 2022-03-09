@@ -26,7 +26,11 @@
         <td>
           {{-- <a href="comics/{{$comic->id}}" class="btn btn-link">Dettagli</a> --}}
           <a href="{{ route("comics.show", $comic->id) }}" class="btn btn-link">Dettagli</a>
-
+          <a href="{{ route("comics.edit", $comic->id) }}" class="btn btn-link">Modifica</a>
+          @include('partials.destroyBtn', [
+             'id' => $comic->id,
+             'route' => "comics.destroy"
+          ])
         </td>
       </tr>
     @endforeach
