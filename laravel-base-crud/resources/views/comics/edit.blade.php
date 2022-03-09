@@ -1,4 +1,4 @@
-<h1>Inserisci fumetto nel database</h1>
+<h1>Modifica fumetto # {{ $comic->id }}</h1>
 <form action="{{ route('comics.update', $comic->id) }}" method="post" class="row g-3">
   @csrf
   @method('put')

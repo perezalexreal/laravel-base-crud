@@ -10,3 +10,10 @@
     <li><strong>Descrizione</strong>: {{ $comic->description }}</li>
     <li><strong>Nazionalità</strong>: {{ $comic->Nationality }}</li>
   </ul>
+
+
+  <a href="{{ route("comics.edit", $comic->id) }}" class="btn btn-link">Modifica</a>
+  @include('partials.destroyBtn', [
+     'id' => $comic->id,
+     'route' => "comics.destroy"
+  ])
